@@ -8,9 +8,8 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#191919" media="(prefers-color-scheme: dark)">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
-<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Ledger">
@@ -58,7 +57,7 @@ ul{list-style:none}
 .hdr-in{padding-block:10px}
 .hdr-row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:36px}
 .brand{display:flex;align-items:center;gap:9px;font-size:17px;font-weight:700;letter-spacing:-.01em}
-.brand svg{width:22px;height:22px;flex:none}
+.brand img{width:22px;height:22px;flex:none;border-radius:5px}
 .icon-btn{width:40px;height:40px;display:grid;place-items:center;border:0;background:none;border-radius:10px;color:var(--ink2)}
 .icon-btn svg{width:22px;height:22px}
 #filters:not(:empty){padding-top:6px}
@@ -191,7 +190,7 @@ input,select{font:inherit;font-size:16px;color:var(--ink);background:var(--surfa
 <header class="hdr"><div class="hdr-in">
   <div class="hdr-row">
     <h1 class="brand">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" fill="#2370cd"/><path d="M7 8h10M7 12h10M7 16h6" stroke="#fff" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+      <img src="mark-64.png" width="22" height="22" alt="">
       Pocket Ledger
     </h1>
     <button class="icon-btn" data-act="settings" aria-label="Export and settings">

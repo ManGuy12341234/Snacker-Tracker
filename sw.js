@@ -1,18 +1,18 @@
 /* Pocket Ledger service worker.
    Caches the app so it opens with no connection.
    Change VERSION whenever you edit any file, so installed copies pick up the update. */
-const VERSION = 'v1';
+const VERSION = 'v3';
 const CACHE = 'pocket-ledger-' + VERSION;
 const PRECACHE = [
   './',
   './index.html',
   './manifest.json',
-  './icons/icon.svg',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/maskable-512.png',
-  './icons/apple-touch-icon.png',
-  './icons/favicon-32.png'
+  './mark-64.png',
+  './icon-192.png',
+  './icon-512.png',
+  './maskable-512.png',
+  './apple-touch-icon.png',
+  './favicon-32.png'
 ];
 
 self.addEventListener('install', (e) => {

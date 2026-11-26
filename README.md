@@ -9,13 +9,18 @@ A small sales, profit and stock tracker that installs on a phone like an app and
 | `index.html` | The whole app |
 | `manifest.json` | Name, colours and icons (what PWABuilder reads) |
 | `sw.js` | Service worker, so the app opens with no connection |
-| `icons/` | App icons, including a maskable one for Android and an Apple touch icon |
+| `icon-192.png`, `icon-512.png`, `maskable-512.png` | App icons (the maskable one is for Android's round and squircle icon shapes) |
+| `apple-touch-icon.png`, `favicon-32.png`, `mark-64.png` | iPhone home-screen icon, browser tab icon, and the small logo in the app header |
+| `shot-overview.png`, `shot-sales.png`, `shot-stock.png` | Screenshots shown on the install screen and read by PWABuilder |
 | `.nojekyll` | Tells GitHub Pages to serve every file as it is |
+
+There are no sub-folders on purpose: every file sits next to `index.html`, so you can upload them all from a phone.
 
 ## Put it on GitHub
 
 1. Create a new repository on GitHub.
-2. Upload everything in this folder to the top level of the repo (keep the `icons` folder). Include `.nojekyll`; it may be hidden in your file browser.
+2. Upload every file in this folder to the top level of the repo. If you can't see `.nojekyll` in your file picker, skip it for now; you can add it later with **Add file → Create new file** (type `.nojekyll` as the name and commit).
+   Then check the images arrived by opening `https://YOURNAME.github.io/REPO/icon-512.png` in a browser. You should see the picture, not a "404" page.
 3. Go to **Settings → Pages**. Under **Build and deployment**, set **Source** to **Deploy from a branch**, pick **main** and **/ (root)**, then **Save**.
 4. After a minute the app is live at `https://YOURNAME.github.io/REPO/`. Open it on your phone and use **Install app** (Android Chrome) or **Share → Add to Home Screen** (iPhone Safari).
 
